@@ -60,15 +60,11 @@ dependencies {
     implementation("androidx.core:core-ktx:1.12.0") // Phiên bản có thể khác
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2") // Phiên bản có thể khác
     implementation("androidx.activity:activity-compose:1.8.1") // Compose cho Activity
-
-// 1. Dòng KHẮC PHỤC LỖI COMPOSE UI (cho dòng import androidx.compose.ui.unit.sp)
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-
-// Thư viện Material Design 3 (cho Card, Button, Text,...)
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("androidx.navigation:navigation-compose:2.7.7")
 
-// 2. Dòng KHẮC PHỤC LỖI VIEWMODEL (cho dòng import androidx.lifecycle.viewmodel.compose.viewModel)
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2") // Dòng này
 }

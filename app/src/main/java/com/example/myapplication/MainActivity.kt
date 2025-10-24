@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.example.myapplication.navigation.AppNavigation
 import com.example.myapplication.screens.LibraryManagementApp
 import com.example.myapplication.screens.SmartTasksApp
 import com.example.myapplication.ui.theme.MyApplicationTheme
@@ -31,7 +32,8 @@ class MainActivity : ComponentActivity() {
                 ) {
                     // Gọi hàm Composable chính chứa toàn bộ logic Onboarding và OOP
                     //SmartTasksApp()
-                    LibraryManagementApp()
+                    //LibraryManagementApp()
+                    AppNavigation()
                 }
             }
         }

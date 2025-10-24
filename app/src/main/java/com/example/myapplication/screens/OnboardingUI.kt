@@ -95,28 +95,28 @@ fun OnboardingPage(
             0 -> OnboardingData(
                 "Chào mừng bạn đến với UTH SmartTasks",
                 "Hãy bắt đầu hành trình quản lý công việc thông minh!",
-                R.drawable.uth, // <-- THAY TÊN ẢNH TƯƠNG ỨNG
+                R.drawable.uthh, // <-- THAY TÊN ẢNH TƯƠNG ỨNG
                 isFinal = false
             )
 
             1 -> OnboardingData(
                 "Easy Time Management",
                 "Với việc quản lý ưu tiên hàng ngày, chúng tôi sẽ giúp bạn quản lý các trạng thái Task.",
-                R.drawable.uth, // <-- THAY TÊN ẢNH TƯƠNG ỨNG
+                R.drawable.uthh, // <-- THAY TÊN ẢNH TƯƠNG ỨNG
                 isFinal = false
             )
 
             2 -> OnboardingData(
                 "Increase Task Effectiveness",
                 "Quản lý thời gian và xác định mục tiêu quan trọng giúp bạn cải thiện hiệu suất.",
-                R.drawable.uth, // <-- THAY TÊN ẢNH TƯƠNG ỨNG
+                R.drawable.uthh, // <-- THAY TÊN ẢNH TƯƠNG ỨNG
                 isFinal = false
             )
 
             3 -> OnboardingData(
                 "Reminder Notification",
                 "Ưu điểm là nó đặt lời nhắc chính xác để bạn không quên lịch trình.",
-                R.drawable.uth, // <-- THAY TÊN ẢNH TƯƠNG ỨNG
+                R.drawable.uthh, // <-- THAY TÊN ẢNH TƯƠNG ỨNG
                 isFinal = true
             )
 
