@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.example.myapplication.screens.LibraryManagementApp
 import com.example.myapplication.screens.SmartTasksApp
 import com.example.myapplication.ui.theme.MyApplicationTheme
 
@@ -29,7 +30,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     // Gọi hàm Composable chính chứa toàn bộ logic Onboarding và OOP
-                    SmartTasksApp()
+                    //SmartTasksApp()
+                    LibraryManagementApp()
                 }
             }
         }
