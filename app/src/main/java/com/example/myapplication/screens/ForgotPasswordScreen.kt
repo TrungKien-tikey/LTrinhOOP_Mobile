@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.PasswordVisualTransformation // <-- (A) CẦN IMPORT THÊM
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -57,6 +58,20 @@ fun ForgotPasswordScreen(
             modifier = Modifier.fillMaxWidth(),
             singleLine = true
         )
+        Spacer(Modifier.height(16.dp)) // <-- (B) THÊM SPACER
+
+        // --- (C) THÊM Ô HIỂN THỊ MẬT KHẨU ---
+        OutlinedTextField(
+            value = uiState.newPassword, // <-- Đọc mật khẩu từ ViewModel
+            onValueChange = {},          // Để trống vì chỉ đọc
+            readOnly = true,             // Đặt là CHỈ ĐỌC
+            label = { Text("Your New Password ") },
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true,
+            visualTransformation = PasswordVisualTransformation() // Ẩn mật khẩu
+        )
+        // --- KẾT THÚC PHẦN THÊM MỚI ---
+
         Spacer(Modifier.height(32.dp))
 
         // --- Nút điều hướng ---
@@ -74,4 +89,3 @@ fun ForgotPasswordScreen(
         }
     }
 }
-
